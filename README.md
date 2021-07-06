@@ -72,7 +72,7 @@ This demo is based on Tuya Smart Cloud Platform, Tuya Smart APP, IoTOS Embeded B
 |    ├── tuya_ble_app_demo.c                    /* application entry file */
 |    └── tuya_app_smart_kettle.c                /* smart kettle application */
 |
-├── include     /* header file */
+└── include     /* header file */
      ├── sdk
      |    ├── custom_app_uart_common_handler.h  /* UART common handler */
      |    ├── custom_app_product_test.h         /* custom product test related */

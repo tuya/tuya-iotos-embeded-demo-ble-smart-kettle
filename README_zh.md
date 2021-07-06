@@ -71,7 +71,7 @@
 |    ├── tuya_ble_app_demo.c                    /* 应用层入口文件 */
 |    └── tuya_app_smart_kettle.c                /* 智能烧水壶应用代码 */
 |
-├── include     /* 头文件目录 */
+└── include     /* 头文件目录 */
      ├── sdk
      |    ├── custom_app_uart_common_handler.h  /* UART通用对接实现代码 */
      |    ├── custom_app_product_test.h         /* 自定义产测项目相关实现 */
