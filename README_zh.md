@@ -1,4 +1,4 @@
-# Tuya IoTOS Embeded Demo BLE Smart Kettle
+# Tuya IoTOS Embeded Demo Bluetooth LE Smart Kettle
 
 [English](./README.md) | [中文](./README_zh.md)
 
@@ -6,7 +6,7 @@
 
 ## 简介 
 
-本 demo 基于涂鸦智能云平台、涂鸦智能APP、IoTOS Embeded Ble SDK，使用涂鸦BLE系列模组快速组建一个智能烧水壶demo。
+本 demo 基于 [涂鸦IoT平台](https://iot.tuya.com/) 、涂鸦智能APP、IoTOS Embeded BLE SDK，使用涂鸦Bluetooth LE系列模组快速组建一个智能烧水壶demo。
 
 <br>
 
@@ -34,7 +34,7 @@
 
 - 代码修改
 
-  1. 在 `tuya_ble_app_demo.h` 填入在涂鸦 IoT 工作台创建的智能产品 PID。
+  1. 在 `tuya_ble_app_demo.h` 填入在 [涂鸦IoT平台](https://iot.tuya.com/) 创建的智能产品 PID。
 
      ```
       #define APP_PRODUCT_ID     "xxxxxxxx"
@@ -109,7 +109,7 @@
 
 参数说明：
 
-涂鸦云平台是以 dp 点的方式管理数据，任何设备产生的数据都需要抽象为 dp 点的形式，一个完整的dp点数据由四部分组成（具体参考 IoT 工作台上的相关介绍）：
+[涂鸦IoT平台](https://iot.tuya.com/) 是以 dp 点的方式管理数据，任何设备产生的数据都需要抽象为 dp 点的形式，一个完整的dp点数据由四部分组成（具体参考 IoT 工作台上的相关介绍）：
 
 - Dp_id： 1个字节，在开发平台注册的 dp_id 序号。
 
@@ -138,7 +138,7 @@
 
 | Dp点1的数据 |         |        |         | ~    | Dp点n的数据 |         |        |         |
 | :---------: | :-----: | :----: | :-----: | :--- | :---------: | :-----: | :----: | :-----: |
-|      1      |    2    |   3    |   4~    | ~    |      n      |   n+1   |  n+2   |  n+3~   |
+|      1      |    2    |   3    |    4    | ~    |      n      |   n+1   |  n+2   |   n+3   |
 |    Dp_id    | Dp_type | Dp_len | Dp_data | ~    |    Dp_id    | Dp_type | Dp_len | Dp_data |
 
 调用该函数时，参数 len 的最大长度为 `TUYA_BLE_REPORT_MAX_DP_DATA_LEN`（当前为255+3）。
@@ -169,8 +169,8 @@
 
 您可以通过以下方法获得涂鸦的支持:
 
-- 开发者中心：https://developer.tuya.com
-- 帮助中心：https://support.tuya.com/help
-- 技术支持工单中心：https://service.console.tuya.com
+- [涂鸦 AI+IoT 开发者平台](https://developer.tuya.com)
+- [帮助中心](https://support.tuya.com/help)
+- [服务与支持](https://service.console.tuya.com)
 
 <br>
